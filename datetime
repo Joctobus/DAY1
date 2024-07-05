@@ -1,0 +1,10 @@
+import datetime
+
+def day_of_week(year, month, day):
+    # Создаем объект даты
+    date = datetime.date(year, month, day)
+    # Получаем день недели: понедельник - 0, воскресенье - 6
+    day_index = date.weekday()
+    # Массив с названиями дней недели
+    days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
+    return days[day_index]
